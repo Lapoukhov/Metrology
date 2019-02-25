@@ -1,0 +1,12 @@
+def sum(a,b)
+ return a+b
+
+arr = []
+if arr.length == 0
+    puts "empty"
+else
+    puts "not empty"
+end
+slag1 = gets     
+slag2 = gets
+CONST = 10

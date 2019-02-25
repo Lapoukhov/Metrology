@@ -1,0 +1,178 @@
+object FrmView: TFrmView
+  Left = 42
+  Top = 125
+  Width = 1403
+  Height = 610
+  Caption = #1084#1077#1090#1088#1080#1082#1080' '#1061#1086#1083#1089#1090#1077#1076#1072
+  Color = clActiveBorder
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 496
+    Top = 24
+    Width = 129
+    Height = 19
+    Caption = #1057#1087#1077#1085' '#1087#1088#1086#1075#1088#1072#1084#1084#1099':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 665
+    Top = 486
+    Width = 215
+    Height = 19
+    Caption = #1057#1091#1084#1084#1072#1088#1085#1099#1081' '#1089#1087#1077#1085' '#1087#1088#1086#1075#1088#1072#1084#1084#1099':'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object btnLoadFile: TButton
+    Left = 441
+    Top = 464
+    Width = 209
+    Height = 40
+    Caption = #1047#1072#1075#1088#1091#1079#1080#1090#1100' '#1092#1072#1081#1083
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGreen
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnLoadFileClick
+  end
+  object mmoView: TMemo
+    Left = 0
+    Top = 8
+    Width = 425
+    Height = 529
+    Color = clMoneyGreen
+    Lines.Strings = (
+      '')
+    ScrollBars = ssBoth
+    TabOrder = 1
+  end
+  object btnParc: TButton
+    Left = 441
+    Top = 520
+    Width = 209
+    Height = 41
+    Caption = #1055#1086#1089#1095#1080#1090#1072#1090#1100' '#1084#1077#1090#1088#1080#1082#1080
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnParcClick
+  end
+  object lvOperators: TListView
+    Left = 697
+    Top = 56
+    Width = 241
+    Height = 401
+    Color = clMoneyGreen
+    Columns = <
+      item
+        Caption = 'j'
+      end
+      item
+        Caption = #1054#1087#1077#1088#1072#1090#1086#1088
+        Width = 137
+      end
+      item
+        Caption = 'F1j'
+      end>
+    GridLines = True
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 3
+    ViewStyle = vsReport
+  end
+  object lvOperands: TListView
+    Left = 432
+    Top = 56
+    Width = 257
+    Height = 400
+    Color = clMoneyGreen
+    Columns = <
+      item
+        Caption = 'i'
+      end
+      item
+        Caption = #1048#1076#1077#1085#1090#1080#1092#1080#1082#1072#1090#1086#1088
+        Width = 150
+      end
+      item
+        Caption = #1057#1087#1077#1085
+      end>
+    GridLines = True
+    TabOrder = 4
+    ViewStyle = vsReport
+  end
+  object EditSummaSpen: TEdit
+    Left = 800
+    Top = 511
+    Width = 121
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+  end
+  object lvP: TListView
+    Left = 944
+    Top = 56
+    Width = 161
+    Height = 401
+    Color = clHighlightText
+    Columns = <
+      item
+        Caption = #8470
+      end
+      item
+        Caption = 'P'
+        Width = 100
+      end>
+    GridLines = True
+    TabOrder = 6
+    ViewStyle = vsReport
+  end
+  object lvPuts: TListView
+    Left = 1112
+    Top = 56
+    Width = 169
+    Height = 401
+    Columns = <
+      item
+        Caption = #8470
+      end
+      item
+        Caption = 'Puts'
+        Width = 100
+      end>
+    GridLines = True
+    TabOrder = 7
+    ViewStyle = vsReport
+  end
+  object dlgOpen: TOpenDialog
+    Top = 536
+  end
+end

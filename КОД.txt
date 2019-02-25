@@ -1,0 +1,184 @@
+def sum(a,b)
+ return a+b
+
+arr = []
+if arr.length == 0
+    puts "empty"
+else
+    puts "not empty"
+end
+  slag1 = gets     
+  slag2 = gets
+
+def fsum(slag1, slag2)
+    i = 1
+    while i < num
+    puts "Inside the loop i = #{i}"  
+    i += 1
+    end
+    x = slag1 + slag2
+end  
+
+i = 0
+num = 5
+
+while i < num
+   puts "Inside the loop i = #{i}"  
+   i += 1
+end
+     ent = gets
+sum = 0
+i = 0
+
+begin
+i += 1
+end
+while i > num
+
+myarray = [1, 0, 740, 14, 25, 22, 4, 88, 95, 25, 68, 87, 11, 32]
+i = 0
+for i in 0 .. 13
+  min = i
+  j = i + 1
+  for j in j .. 14
+    myarray[j] < myarray[min] ? min = j : puts "okey"
+  end
+  temp = myarray[i]  
+  myarray[i] = myarray[min]
+  myarray[min] = temp
+end
+
+def fact(n)   # нахождение факторила
+  if n == 0
+  abq = 5
+    1
+  else
+    n * fact(n - 1)
+  end
+end
+ 
+print fact(10)
+
+slag1 = left + slag1 / left
+
+def englishNumber number # возвращаем число словами
+
+  if number < 0
+    return "Пожалуйста, введите число ноль или больше."
+  end
+  if number > 100
+    return "Пожалуйста, введите число 100 или меньше."
+  end
+  
+  numString = " "
+  
+  left  = number
+  write = left / 100          #  Сколько сотен осталось вывести?
+  left  = left - write * 100
+  puts left
+  if write > 0
+    return "one hundred"
+  end
+  
+  write = left / 10          #  Сколько десятков осталось вывести?
+  left  = left - write * 10
+  
+  if write > 0
+    if write == 1  #  Охо-хо...
+      if left == 0
+        numString = numString + "ten"
+      if left == 1
+        numString = numString + "eleven"
+      if left == 2
+        numString = numString + "twelve"
+      if left == 3
+        numString = numString + "thirteen"
+      if left == 4
+        numString = numString + "fourteen"
+      if left == 5
+        numString = numString + "fifteen"
+      if left == 6
+        numString = numString + "sixteen"
+      if left == 7
+        numString = numString + "seventeen"
+      if left == 8
+        numString = numString + "eighteen"
+      if left == 9
+        numString = numString + "nineteen"
+      end
+      left = 0
+    if write == 2
+      numString = numString + "twenty"
+    if write == 3
+      numString = numString + "thirty"
+    if write == 4
+      numString = numString + "forty"
+    if write == 5
+      numString = numString + "fifty"
+    if write == 6
+     numString = numString + "sixty"
+    if write == 7
+      numString = numString + "seventy"
+    if write == 8
+      numString = numString + "eighty"
+    if write == 9
+      numString = numString + "ninety"
+    end
+    
+    if left > 0
+      numString = numString + " -- "
+    end
+  end
+  
+  write = left  #  Сколько единиц осталось вывести?
+  left  = 0     
+  
+  if write > 0
+    if    write == 1
+      numString = numString + "one"
+    if write == 2
+     numString = numString + "two"
+    if write == 3
+      numString = numString + "three"
+    if write == 4
+      numString = numString + "four"
+    if write == 5
+      numString = numString + "five"
+    if write == 6
+      numString = numString + "six"
+    if write == 7
+      numString = numString + "seven"
+    if write == 8
+      numString = numString + "eight"
+    if write == 9
+      numString = numString + "nine"
+    end
+  end
+  
+  if numString == 0
+    return "zero"
+  end
+  numString
+end
+
+age = ARGV[0] 
+
+puts age
+puts ab
+puts a
+puts x
+puts YY
+
+case age.to_i 
+# если $age больше 0 но меньше 2 
+when 0 .. 2 
+puts "Возраст: больше 0 но меньше 2" 
+when 3 .. 6 
+puts "Возраст: больше 3 но меньше 6" 
+when 7 .. 12 
+puts "Возраст: больше 7 но меньше 12" 
+when 13 .. 18 
+puts "Возраст: больше 13 но меньше 18" 
+else 
+puts "Уже взрослый" 
+end
